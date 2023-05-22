@@ -1,0 +1,182 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height : 100%;
+    width : 100%;
+    margin-bottom: 80px;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    border : 0;
+    margin-top: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    box-shadow: 10 0 50px 0 black;
+}
+.cart{
+    margin-left: 84px;
+}
+header * {
+    display: inline;
+    margin : 25px;
+}
+
+header li {
+    margin: 18px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+.centered {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    background-color: #EB4D4B;
+    opacity: 55%;
+    position: absolute;
+    top: 66%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 375px;
+  }
+
+/*  OrderPage Styling */
+
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(217,51,250);
+background: linear-gradient(90deg, rgba(217,51,250,0.8632703081232493) 9%, rgba(255,177,92,1) 61%, rgba(233,203,87,0.6055672268907564) 94%); 
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 0px;
+
+  }
+  .main_title{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: cursive;
+    font-family: math;
+    font-weight: 800;
+  }
+  .card-main-text{
+    color:#000;
+    font-weight:900;
+    text-align:center;
+    font-size:29px;
+    margin-top:10px;
+  }
+  .cards {
+    display: grid;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 6rem;
+  }
+  
+  .cards_item {
+    display: flex;
+  }
+  
+  .card_image {
+    display: flex;
+    height: 250px;
+    padding: 21px;
+    
+  }
+  
+  .card_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px 25px 5px 50px;
+    object-fit: cover;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px 25px 5px 50px;
+    transition: transform 0.1s linear, box-shadow 0.2s;
+  }
+
+  
+  .card_content {
+    padding: 0.5rem 1rem 1rem;
+    color: #fff;
+  }
+  
+  .card_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: auto;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    transform: rotate(-3.3deg);
+    transform-origin: left top;
+    font-family: Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 1.325rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+ .order_btn{
+    justify-content: center;
+    display:flex;
+    margin-top:25px;
+    padding:20px;
+  }
+  .order{
+    padding: 15px 57px;
+    font-size:30px;
+    color:#000;
+    font-weight:700;
+    border-radius:40px;
+    border:none;
+  }
+  .card_text {
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica,
+      Helvetica Neue, Arial, sans-serif;
+    line-height: 1.5;
+    text-size-adjust: 0.2px;
+    color:#000;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 480px) {
+    .card_text {
+      overflow: auto;
+      max-height: 20rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--aqua) var(--violet);
+    }
+}
